@@ -7,3 +7,6 @@ where pogrzeb.id in (
         where data >  date_sub(curdate(), interval 2 year)
 )
 group by umowa.nazwa_firmy
+
+
+
