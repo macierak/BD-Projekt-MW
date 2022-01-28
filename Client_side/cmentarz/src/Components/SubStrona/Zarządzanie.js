@@ -17,10 +17,10 @@ const Zarządzanie = () => {
     return (
         <div>
             <ModalRaport data = {data}/>
-            Pokaż raport:
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("zarobki")}>Zarobki firm w ciągu roku</button>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("pogrzeby")}>Ilość pogrzebów w roku</button>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("najlepsi")}>Najlepsi pracownicy z tygodnia</button>
+            Pokaż raport: <br/>
+            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("zarobki")}>Zarobki firm w ciągu roku</button><br/><br/>
+            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("pogrzeby")}>Ilość pogrzebów w roku</button><br/><br/>
+            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("najlepsi")}>Najlepsi pracownicy roku</button><br/><br/>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raportModal" onClick={() => getRaportData("rodziny")}>Rodziny, które mają najwięcej zmarłych</button>
         </div>
     )

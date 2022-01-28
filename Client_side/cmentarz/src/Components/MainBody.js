@@ -55,7 +55,7 @@ const MainBody = (props) => {
             
             
         
-            <div className="float-end w-75">
+            <div className="float-end w-75 p-5">
                 {renderSwitch()}
             </div>
             

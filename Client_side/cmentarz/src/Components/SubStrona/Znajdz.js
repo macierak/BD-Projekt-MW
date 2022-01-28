@@ -58,7 +58,7 @@ const Znajdz = () => {
             <input id='fname' onChange={handleChange}></input>
             <input id='lname' onChange={handleChange2}></input>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getNameResults("name")} >
-                Launch demo modal
+                Wyszukaj
             </button>
             
         
@@ -67,14 +67,14 @@ const Znajdz = () => {
             Rząd   <input type="number"  onChange={handleChange2}></input>
             Pozycja<input type="number"  onChange={handleChange3}></input>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getPositionResults("location")}>
-                Launch demo modal
+                Wyszukaj
             </button>
         
         
             <h4>Wyszukaj po dacie pogrzebu:</h4>
             <input type="date" id='date' onChange={handleChange}></input>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getDateResults("date")}>
-                Launch demo modal
+                Wyszukaj
             </button>
             
             
