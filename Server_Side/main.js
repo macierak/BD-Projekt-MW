@@ -109,7 +109,7 @@ app.post("/add/:type", (request, response) => {
             query = "insert into pogrzeb(grób, firma, data, rodzina) values("+ insertData.arg1 + ", "+ insertData.arg2 + ", '"+ insertData.arg3 + "', "+ insertData.arg4 + ")"
             break
         case "Pracownik":
-            query = "insert into pracownik(nazwisko, etat, placa, login, haslo) values('"+ insertData.arg1 + "', "+ insertData.arg2 + insertData.arg3 + ", '"+ insertData.arg4 + "', '"+ insertData.arg5 + "')"
+            query = "insert into pracownik(nazwisko, etat, placa, login, haslo) values('"+ insertData.arg1 + "', "+ insertData.arg2 +", "+ insertData.arg3 + ", '"+ insertData.arg4 + "', '"+ insertData.arg5 + "')"
             break
         case "Zmarły":
             query =   "insert into zmarły(imie, nazwisko, data_urodzenia, data_śmierci, cytat, grób) values('"+ insertData.arg1 + "', '"+ insertData.arg2 +"', '"+ insertData.arg3 + "', '"+ insertData.arg4 + "', '"+ insertData.arg5 + "', "+ insertData.arg6 +")"             
